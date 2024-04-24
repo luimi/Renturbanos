@@ -1,6 +1,9 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  --margin: 0;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +13,69 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+:root {
+  --green-bg: #55cb8a;
+  --green: #05ff77;
+  --red: #ff5031;
+  --gray: #f5f4f4;
+  --gray-bg: #d9d9d9;
+  --orange: #f69553;
+  --orange-bg: #cf8655;
+  --purple-bg: #9877ba;
+  --purple: #5e00be;
+}
+body {
+  font-family: 'Fredoka';
+}
+.floating-container {
+  position: relative;
+}
+.floating-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.floating-left-center {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.floating-right-center {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
+}
+.floating-right-fit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-gray-dark {
+  background-color: var(--gray-bg);
+}
+.bg-purple {
+  background-color: var(--purple) !important;
+  color: white !important;
+}
+.bg-green {
+  background-color: var(--green) !important;
+  color: white !important;
+}
+.bg-red {
+  background-color: var(--red) !important;
+  color: white !important;
 }
