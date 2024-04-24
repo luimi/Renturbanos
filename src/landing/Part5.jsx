@@ -8,7 +8,7 @@ const Part5 = () => {
           Registrarme ahora...
         </div>
         <div className="col-2 d-grid">
-          <button type="button" class="btn bg-purple rounded-pill">
+          <button type="button" className="btn bg-purple rounded-pill">
             Continuar
           </button>
         </div>

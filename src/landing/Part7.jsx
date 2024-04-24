@@ -39,8 +39,8 @@ const Part7 = () => {
           Solicítalo Aquí
         </button>
         <ScrollItems id="part7">
-          {services.map((service) => {
-            return <IconButton title={service.title} icon={service.icon} />;
+          {services.map((service, index) => {
+            return <IconButton title={service.title} icon={service.icon} key={index}/>;
           })}
         </ScrollItems>
       </div>

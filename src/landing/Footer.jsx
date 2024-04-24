@@ -37,26 +37,26 @@ const Footer = () => {
           </div>
           <div className="row">
             <span>
-              <i class="bi bi-house-door-fill"></i> Calle 100 # 10 - 00 Oficina
+              <i className="bi bi-house-door-fill"></i> Calle 100 # 10 - 00 Oficina
               202
             </span>
           </div>
           <div className="row">
             <span>
-              <i class="bi bi-telephone-fill"></i> +57 300 123 3212
+              <i className="bi bi-telephone-fill"></i> +57 300 123 3212
             </span>
           </div>
           <div className="row">
             <span>
-              <i class="bi bi-envelope-fill"></i> hola@homebilu.com
+              <i className="bi bi-envelope-fill"></i> hola@homebilu.com
             </span>
           </div>
         </div>
       </div>
       <div className="row mb-4 mt-4">
         <span>
-          <i class="bi bi-linkedin"></i> <i class="bi bi-instagram"></i>{' '}
-          <i class="bi bi-facebook"></i> <i class="bi bi-youtube"></i>
+          <i className="bi bi-linkedin"></i> <i className="bi bi-instagram"></i>{' '}
+          <i className="bi bi-facebook"></i> <i className="bi bi-youtube"></i>
         </span>
       </div>
       <div className="row">

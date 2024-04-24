@@ -16,7 +16,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand align-middle" style={title} href="#top">
+        <a className="navbar-brand align-middle mx-5" style={title} href="#top">
           <img src={logo} className="me-1" style={{ width: 20 }} alt="logo"/>
           <b>Renturbano</b>
         </a>

@@ -37,8 +37,8 @@ const Part6 = () => {
         </p>
         <button className="btn bg-green rounded-pill">Solicítalo Aquí</button>
         <div className="row overflow-auto flex-nowrap">
-          {services.map((service) => {
-            return <IconButton title={service.title} icon={service.icon} />;
+          {services.map((service, index) => {
+            return <IconButton title={service.title} icon={service.icon} key={index}/>;
           })}
         </div>
 

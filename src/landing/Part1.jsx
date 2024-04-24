@@ -1,17 +1,33 @@
-import React from 'react';
-import background  from '../assets/graphics/part1background.png'
-import restaurante from '../assets/icons/restaurante.png'
-import {openWhatsApp} from '../utils/whatsapp'
+import { useState, useEffect } from 'react';
+import background from '../assets/graphics/part1background.png'
+import { openWhatsApp } from '../utils/whatsapp'
+import { restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiquin } from '../assets/icons'
 
 const Part1 = () => {
+  const [current, setCurrent] = useState(0)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent(current === 7 ? 0 : current + 1)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
   return (
-    <div style={{...container, backgroundImage: `url(${background})`}} className="floating-container" >
+    <div style={{ ...container, backgroundImage: `url(${background})` }} className="floating-container" >
       <div style={content} className="floating-left-center ms-5">
-        <img
-          src={restaurante}
-          style={icon}
-          alt='service'
-        />
+        <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-inner">
+            {[restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiquin].map((image, index) => {
+              return <div className={`carousel-item ${index === current ? 'active' : ''}`} key={index}>
+                <img
+                  src={image}
+                  style={icon}
+                  alt='service'
+                />
+              </div>
+            })}
+          </div>
+        </div>
+
         <div>
           <h1>
             <b>Solo se vive una vez en la vida</b>
@@ -35,7 +51,7 @@ const Part1 = () => {
 const container = {
   height: 'calc(100vh - 56px)',
   backgroundPosition: 'center center',
- //backgroundAttachment: 'fixed',
+  //backgroundAttachment: 'fixed',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
 };
@@ -44,7 +60,7 @@ const content = {
   width: 500,
   display: 'flex',
   flexDirection: 'row',
-  height:'fit-content'
+  height: 'fit-content'
 };
 const icon = {
   width: 200,
