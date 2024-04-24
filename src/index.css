@@ -79,3 +79,6 @@ body {
   background-color: var(--red) !important;
   color: white !important;
 }
+.bg-white {
+  background-color: white;
+}
