@@ -6,11 +6,11 @@ import { restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiq
 const Part1 = () => {
   const [current, setCurrent] = useState(0)
   useEffect(() => {
-    const interval = setInterval(() => {
+    setTimeout(() => {
+      console.log("tik", current)
       setCurrent(current === 7 ? 0 : current + 1)
     }, 3000)
-    return () => clearInterval(interval)
-  }, [])
+  }, [current])
   return (
     <div style={{ ...container, backgroundImage: `url(${background})` }} className="floating-container" >
       <div style={content} className="floating-left-center ms-5">
