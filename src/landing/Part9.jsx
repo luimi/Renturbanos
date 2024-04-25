@@ -6,11 +6,11 @@ const Part9 = () => {
     <div className="my-4 container">
       <div className="row text-center mb-3">
         <h1>
-          Únete a <span style={{ color: 'var(--green)' }}>Rentaurbanos</span>
+          Únete a <span style={{ color: 'var(--green)' }}>Renturbanos</span>
         </h1>
       </div>
       <div className="row p-1">
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <div className="p-2 bg-white d-grid rounded-4">
             <img src={arquitecto} style={imageStyle} alt="arquitecto"/>
             <button type="button" className="btn btn-danger rounded-pill">
@@ -18,7 +18,7 @@ const Part9 = () => {
             </button>
           </div>
         </div>
-        <div className="col-6 ">
+        <div className="col-12 col-md-6">
           <div className="p-2 bg-white d-grid rounded-4">
             <img src={vendedora} style={imageStyle} alt="vendedora"/>
             <button type="button" className="btn bg-green rounded-pill">
