@@ -62,10 +62,11 @@ const container = {
 };
 
 const content = {
-  width: "80%",
+  width: "70%",
   display: 'flex',
   flexDirection: 'row',
-  height: 'fit-content'
+  height: 'fit-content',
+  paddingRight:150
 };
 const icon = {
   width: 200,

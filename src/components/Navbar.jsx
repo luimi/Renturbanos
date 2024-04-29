@@ -18,7 +18,7 @@ const Navbar = () => {
         </button>
         <a className="navbar-brand align-middle mx-5" style={title} href="#top">
           <img src={logo} className="me-1" style={{ width: 20 }} alt="logo"/>
-          <b>Renturbano</b>
+          <b style={{fontSize: 26}}>Renturbano</b>
         </a>
         <div
           className="collapse navbar-collapse justify-content-end"

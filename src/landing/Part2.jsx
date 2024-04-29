@@ -40,9 +40,9 @@ const services = [
 const Part2 = () => {
   return (
     <div style={container} className="p-4 mt-5">
-      <h5>
+      <h4>
         <b>El espacio que buscas ¡nosotros te lo encontramos!</b>
-      </h5>
+      </h4>
       <div>
         <div className="pt-5 pb-5 row overflow-auto flex-nowrap">
           {services.map(({ title, icon }, index) => {

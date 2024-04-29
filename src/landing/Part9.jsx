@@ -11,17 +11,22 @@ const Part9 = () => {
       </div>
       <div className="row p-1">
         <div className="col-12 col-md-6">
-          <div className="p-2 bg-white d-grid rounded-4">
+          <div className="p-2 bg-white  d-grid">
+            <div className='shadow-lg rounded-4 d-grid'>
             <img src={arquitecto} style={imageStyle} alt="arquitecto"/>
-            <button type="button" className="btn btn-danger rounded-pill">
+            </div>
+            
+            <button type="button" className="btn btn-danger rounded-pill mt-3">
               Registra tu espacio
             </button>
           </div>
         </div>
         <div className="col-12 col-md-6">
-          <div className="p-2 bg-white d-grid rounded-4">
+          <div className="p-2 bg-white d-grid">
+            <div className='shadow-lg rounded-4 d-grid'>
             <img src={vendedora} style={imageStyle} alt="vendedora"/>
-            <button type="button" className="btn bg-green rounded-pill">
+            </div>
+            <button type="button" className="btn bg-green rounded-pill mt-3">
               Conviertete en un Brokerentur
             </button>
           </div>

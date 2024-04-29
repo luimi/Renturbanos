@@ -26,7 +26,7 @@ const Part6 = () => {
   return (
     <div className=" p-4 mt-5 ">
       <div className="pt-4 pb-4 ps-4 bg-gray row" >
-        <div className='col-12 col-sm-9'>
+        <div className='col'>
           <h1>Ser tu Anfitrión es un privilegio</h1>
           <p>Atendemos a tus huéspedes.</p>
           <p>
@@ -40,11 +40,11 @@ const Part6 = () => {
             })}
           </div>
         </div>
-        <div className='col-sm-3 d-none d-sm-block'>
+        <div className='col-auto d-none d-sm-block floating-container'>
           <img
             src={recepcionistaGraphic}
-            className=""
-            style={{ width: "-webkit-fill-available" }}
+            className="floating-right-fit"
+            style={{ }}
             alt='model'
           />
         </div>

@@ -4,7 +4,7 @@ import {manoCasa, logo} from '../assets/icons'
 const Part4 = () => {
   return (
     <div className="mt-5 p-4">
-      <div className="row rounded-4 p-3" style={container}>
+      <div className="row rounded-4 p-5" style={container}>
         <div className="col-md-5 col-lg-3 d-none d-md-block floating-container">
           <img
             className="floating-center"
