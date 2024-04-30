@@ -23,6 +23,10 @@ import telefonoTicket from './telefono-ticket.png'
 import manoTelefonoPago from './mano-telefono-pago.png'
 import edificioTelefonoChat from './edificio-telefono-chat.png'
 import manoTelefonoRenta from './mano-telefono-renta.png'
+import llaveMano from './llave-mano.png'
+import tabletTexto from './tablet-texto.png'
+import telefonoChecklist from './telefono-checklist.png'
+import telefonoManoDocumento from './telefono-mano-documento.png'
 
 
 export {
@@ -50,5 +54,9 @@ export {
     telefonoTicket,
     manoTelefonoPago,
     edificioTelefonoChat,
-    manoTelefonoRenta
+    manoTelefonoRenta,
+    llaveMano,
+    tabletTexto,
+    telefonoChecklist,
+    telefonoManoDocumento
 }

@@ -16,16 +16,13 @@ const Landing = () => {
     <div>
       <Navbar />
       <Part1 />
-      <div className="container">
-
-        <Part2 />
-        <Part3 />
-        <Part4 />
-        <Part5 />
-        <Part6 />
-        <Part7 />
-        <Part8 />
-      </div>
+      <Part2 />
+      <Part3 />
+      <Part4 />
+      <Part5 />
+      <Part6 />
+      <Part7 />
+      <Part8 />
 
       <Part9 />
       <Footer />

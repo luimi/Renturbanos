@@ -15,11 +15,11 @@ const Part4 = () => {
         </div>
         <div className="col-md-7 col-lg-7 col-12">
           <div className="row">
-            <div className="col-10">
-              <h1 style={{ color: 'var(--orange)' }}>¿Necesitas dinero?</h1>
-              <p>Tu propiedad es el mejor respaldo.</p>
+            <div className="col-auto">
+              <h1 style={{ color: '#EDB543', fontSize: '3rem'}}>¿Necesitas dinero?</h1>
+              <p style={{fontSize: '1.5rem'}}>Tu propiedad es el mejor respaldo.</p>
             </div>
-            <div className="col-2 floating-container">
+            <div className="col floating-container d-none d-lg-block">
               <img
                 className="floating-left-center"
                 style={{ width: 60 }}
@@ -29,9 +29,9 @@ const Part4 = () => {
             </div>
           </div>
           <div className="row">
-            <span>
-              <b>Compramos directamente con</b>
-              <span style={{ color: 'var(--orange)' }}>
+            <span style={{fontSize: '1.5rem'}}>
+              <b style={{fontWeight: 500}}>Compramos directamente con</b>
+              <span style={{ color: '#EDB543' }}>
                 {' '}
                 pacto de retroventa.
               </span>

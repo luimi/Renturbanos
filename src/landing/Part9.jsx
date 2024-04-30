@@ -12,21 +12,21 @@ const Part9 = () => {
       <div className="row p-1">
         <div className="col-12 col-md-6">
           <div className="p-2 bg-white  d-grid">
-            <div className='shadow-lg rounded-4 d-grid'>
+            <div className='rounded-4 d-grid' style={{boxShadow: "0px 4px 22.5px 0px #00000040"}}>
             <img src={arquitecto} style={imageStyle} alt="arquitecto"/>
             </div>
             
-            <button type="button" className="btn btn-danger rounded-pill mt-3">
+            <button type="button" className="btn rounded-pill mt-3" style={{backgroundColor: '#FF5031', fontWeight: 500}}>
               Registra tu espacio
             </button>
           </div>
         </div>
         <div className="col-12 col-md-6">
           <div className="p-2 bg-white d-grid">
-            <div className='shadow-lg rounded-4 d-grid'>
+            <div className='rounded-4 d-grid' style={{boxShadow: "0px 4px 22.5px 0px #00000040"}}>
             <img src={vendedora} style={imageStyle} alt="vendedora"/>
             </div>
-            <button type="button" className="btn bg-green rounded-pill mt-3">
+            <button type="button" className="btn rounded-pill mt-3 " style={{backgroundColor: 'var(--green)', fontWeight: 500}}>
               Conviertete en un Brokerentur
             </button>
           </div>
@@ -40,4 +40,5 @@ const imageStyle = {
   maxHeight: 260,
   justifySelf: "center"
 }
+
 export default Part9;

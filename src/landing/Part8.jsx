@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollItems from '../components/ScrollItems';
 import IconButton from '../components/IconButton';
-import {telefonoTicket, manoTelefonoPago, edificioTelefonoChat, manoTelefonoRenta} from '../assets/icons'
+import {telefonoTicket, manoTelefonoPago, edificioTelefonoChat, manoTelefonoRenta, llaveMano, tabletTexto} from '../assets/icons'
 
 const services = [
   {
@@ -19,6 +19,14 @@ const services = [
   {
     title: 'Autogestión',
     icon: manoTelefonoRenta,
+  },
+  {
+    title: 'Reparaciones locativas en línea',
+    icon: llaveMano,
+  },
+  {
+    title: 'Gestión de contrato en línea',
+    icon: tabletTexto,
   },
 ];
 

@@ -15,7 +15,7 @@ const Part1 = () => {
     <div style={{ ...container, backgroundImage: `url(${background})` }} >
       <div className="row" style={{width: "100%", height: "inherit"}}>
         <div className='col-12 floating-container'>
-          <div style={content} className="floating-center row">
+          <div style={content} className="floating-center row me-md-5">
             <div className="carousel slide mx-4 col-12 col-md-4" data-bs-ride="carousel">
               <div className="carousel-inner">
                 {[restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiquin].map((image, index) => {
@@ -31,10 +31,10 @@ const Part1 = () => {
             </div>
 
             <div className='col-12 col-md-6'>
-              <h1>
+              <h1 style={{/*fontSize: '3rem'*/}} className='display-5'>
                 <b>Solo se vive una vez en la vida</b>
               </h1>
-              <p>
+              <p style={{fontSize: '1.5rem'}}>
                 En este lugar encuentras tus mejores experiencias de vivir, viajar y
                 trabajar
               </p>
@@ -66,7 +66,7 @@ const content = {
   display: 'flex',
   flexDirection: 'row',
   height: 'fit-content',
-  paddingRight:150
+  //paddingRight:150
 };
 const icon = {
   width: 200,

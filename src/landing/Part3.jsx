@@ -26,9 +26,9 @@ const additionalServices = [
 const Part3 = () => {
   return (
     <div className="p-4 mt-5">
-      <h4>
-        <b>Atrévete a hacerlo diferente para ver tu propiedad distinta</b>
-      </h4>
+      <h3>
+        <b>Atrévete a hacerlo diferente para ver tu propiedad distintas en arriendos y rentas</b>
+      </h3>
       <div>
         <div className="mt-3 row">
           {additionalServices.map(({ text, button, image, color }, index) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollItems from '../components/ScrollItems';
 import IconButton from '../components/IconButton';
-import {manoTelefonoChecklist, manoTelefonoTarjeta,laptopBuscar, tarjetaSeguridadMoneda} from '../assets/icons'
+import {manoTelefonoChecklist, manoTelefonoTarjeta,laptopBuscar, tarjetaSeguridadMoneda, telefonoManoDocumento, telefonoChecklist} from '../assets/icons'
 
 const services = [
   {
@@ -19,6 +19,14 @@ const services = [
   {
     title: 'Reportes de créditos',
     icon: tarjetaSeguridadMoneda,
+  },
+  {
+    title: 'Garantías de pagos con seguros',
+    icon: telefonoManoDocumento,
+  },
+  {
+    title: 'Contrato digital',
+    icon: telefonoChecklist,
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import IconButton from '../components/IconButton'
-import {restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiquin} from '../assets/icons'
+import ScrollItems from '../components/ScrollItems'
+import { restaurante, hotel, casa, paquetes, supermarket, garita, oficina, botiquin } from '../assets/icons'
 
 const services = [
   {
@@ -40,14 +41,17 @@ const services = [
 const Part2 = () => {
   return (
     <div style={container} className="p-4 mt-5">
-      <h4>
+      <h3>
         <b>El espacio que buscas ¡nosotros te lo encontramos!</b>
-      </h4>
+      </h3>
       <div>
         <div className="pt-5 pb-5 row overflow-auto flex-nowrap">
-          {services.map(({ title, icon }, index) => {
-            return <IconButton title={title} icon={icon} key={index} indicator={true}/>;
-          })}
+          <ScrollItems id="part2">
+            {services.map(({ title, icon }, index) => {
+              return <IconButton title={title} icon={icon} key={index} indicator={true} />;
+            })}
+          </ScrollItems>
+
         </div>
       </div>
     </div>

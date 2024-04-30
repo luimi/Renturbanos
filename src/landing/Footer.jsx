@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col">
-            <small>rentaurbanos.com. Todos los derechos reservados.</small>
+            <small>renturbanos.com. Todos los derechos reservados.</small>
           </div>
           <div className="col text-end">
             <small>Políticas de privacidad</small>

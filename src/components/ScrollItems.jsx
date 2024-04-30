@@ -26,7 +26,8 @@ const ScrollItems = ({ children, distance = 200, id = 'part0' }) => {
         alt='next'
       />
       <div
-        style={{ overflowX: 'scroll', scrollBehavior: 'smooth' }}
+        className='mx-5'
+        style={{ overflowX: 'hidden', scrollBehavior: 'smooth' }}
         id={`scrollitem-${id}`}
       >
         <div className="row flex-nowrap">{children}</div>
