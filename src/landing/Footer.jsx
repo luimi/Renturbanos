@@ -35,18 +35,18 @@ const Footer = () => {
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-house-door-fill"></i> Calle 100 # 10 - 00 Oficina
+                <i className="bi bi-house-door-fill me-4"></i> Calle 100 # 10 - 00 Oficina
                 202
               </span>
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-telephone-fill"></i> +57 300 123 3212
+                <i className="bi bi-telephone-fill me-4"></i> +57 300 123 3212
               </span>
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-envelope-fill"></i> hola@homebilu.com
+                <i className="bi bi-envelope-fill me-4"></i> hola@homebilu.com
               </span>
             </div>
           </div>

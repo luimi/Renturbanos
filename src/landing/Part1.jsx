@@ -30,8 +30,8 @@ const Part1 = () => {
               </div>
             </div>
 
-            <div className='col-12 col-md-6'>
-              <h1 style={{/*fontSize: '3rem'*/}} className='display-5'>
+            <div className='col-12 col-md-5'>
+              <h1 style={{/*fontSize: '3rem'*/fontWeight: 400}} className='display-5'>
                 <b>Solo se vive una vez en la vida</b>
               </h1>
               <p style={{fontSize: '1.5rem'}}>
