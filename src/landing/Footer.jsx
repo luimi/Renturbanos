@@ -35,18 +35,17 @@ const Footer = () => {
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-house-door-fill me-4"></i> Calle 100 # 10 - 00 Oficina
-                202
+                <i className="bi bi-house-door-fill me-4"></i> Carrera. 53 # 80 -198 Barranquilla, Atlántico
               </span>
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-telephone-fill me-4"></i> +57 300 123 3212
+                <i className="bi bi-telephone-fill me-4"></i> +57 301  423 6639
               </span>
             </div>
             <div className="row">
               <span>
-                <i className="bi bi-envelope-fill me-4"></i> hola@homebilu.com
+                <i className="bi bi-envelope-fill me-4"></i> pqr@renturbanos.com
               </span>
             </div>
           </div>

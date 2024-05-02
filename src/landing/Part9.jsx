@@ -1,5 +1,6 @@
 import React from 'react';
 import { arquitecto, vendedora} from '../assets/graphics'
+import { openWhatsApp } from '../utils/whatsapp';
 
 const Part9 = () => {
   return (
@@ -16,7 +17,7 @@ const Part9 = () => {
             <img src={arquitecto} style={imageStyle} alt="arquitecto"/>
             </div>
             
-            <button type="button" className="btn rounded-pill mt-3" style={{backgroundColor: '#FF5031', fontWeight: 500}}>
+            <button type="button" className="btn rounded-pill mt-3" style={{backgroundColor: '#FF5031', fontWeight: 500}} onClick={openWhatsApp("Hola, estoy interesado en entrar en negocios de renta.")}>
               Registra tu espacio
             </button>
           </div>
@@ -26,7 +27,7 @@ const Part9 = () => {
             <div className='rounded-4 d-grid' style={{boxShadow: "0px 4px 22.5px 0px #00000040"}}>
             <img src={vendedora} style={imageStyle} alt="vendedora"/>
             </div>
-            <button type="button" className="btn rounded-pill mt-3 " style={{backgroundColor: 'var(--green)', fontWeight: 500}}>
+            <button type="button" className="btn rounded-pill mt-3 " style={{backgroundColor: 'var(--green)', fontWeight: 500}} onClick={openWhatsApp("Hola, estoy interesado en trabajar con ustedes.")}>
               Conviertete en un Brokerentur
             </button>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import IconCardButton from '../components/IconCardButton';
-import {fotografo, obrero, aseo} from '../assets/graphics'
+import {fotografo, obrero, aseo} from '../assets/graphics';
 
 const additionalServices = [
   {
@@ -8,18 +8,21 @@ const additionalServices = [
     button: 'Registrarme',
     image: fotografo,
     color: 'purple',
+    message: 'Hola, me interesa en el avaluó y fotografías renta.'
   },
   {
     text: 'Ofrece tus propiedades como nuevas',
     button: 'Solicitar',
     image: obrero,
     color: 'green',
+    message: 'Hola, estoy interesante en mantenimientos, acabados, remodelaciones o diseño de interiores.'
   },
   {
     text: 'Servicio de aseo y limpieza a domicilio',
     button: 'Lo Necesito',
     image: aseo,
     color: 'orange',
+    message: 'Hola, estoy interesado en el aseo y limpieza.'
   },
 ];
 
@@ -31,7 +34,7 @@ const Part3 = () => {
       </h3>
       <div>
         <div className="mt-3 row">
-          {additionalServices.map(({ text, button, image, color }, index) => {
+          {additionalServices.map(({ text, button, image, color, message }, index) => {
             return (
               <IconCardButton
                 text={text}
@@ -39,6 +42,7 @@ const Part3 = () => {
                 image={image}
                 color={color}
                 key={index}
+                message={message}
               />
             );
           })}

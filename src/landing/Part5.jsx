@@ -1,4 +1,5 @@
 import React from 'react';
+import { openWhatsApp } from '../utils/whatsapp';
 
 const Part5 = () => {
   return (
@@ -8,7 +9,7 @@ const Part5 = () => {
           Registrarme ahora...
         </div>
         <div className="col-auto d-grid">
-          <button type="button" className="btn bg-purple rounded-pill">
+          <button type="button" className="btn bg-purple rounded-pill" onClick={openWhatsApp("Hola, necesito dinero, me interesa venderte.")}>
             Continuar
           </button>
         </div>

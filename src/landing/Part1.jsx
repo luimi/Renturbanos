@@ -7,7 +7,6 @@ const Part1 = () => {
   const [current, setCurrent] = useState(0)
   useEffect(() => {
     setTimeout(() => {
-      console.log("tik", current)
       setCurrent(current === 7 ? 0 : current + 1)
     }, 3000)
   }, [current])
@@ -41,7 +40,7 @@ const Part1 = () => {
               <button
                 type="button"
                 className="btn rounded-pill bg-red"
-                onClick={openWhatsApp("Buenas")}
+                onClick={openWhatsApp("Hola, estoy interesado en tus servicios.")}
               >
                 Empieza ahora
               </button>

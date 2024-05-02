@@ -2,6 +2,7 @@ import React from 'react';
 import IconButton from '../components/IconButton';
 import { recepcionista, timbre, butaco, mucama } from '../assets/icons'
 import { recepcionista as recepcionistaGraphic } from '../assets/graphics'
+import { openWhatsApp } from '../utils/whatsapp';
 
 const services = [
   {
@@ -33,7 +34,7 @@ const Part6 = () => {
             <b>Operamos rentas vacacionales y de cortas estadías</b> con nuestra
             ayuda
           </p>
-          <button className="btn bg-green rounded-pill mb-5">Solicítalo Aquí</button>
+          <button className="btn bg-green rounded-pill mb-5" onClick={openWhatsApp("Hola, estoy interesado en que seas mi anfitrión.")}>Estoy interezado, soy arrendatario</button>
           <div className="row overflow-auto flex-nowrap">
             {services.map((service, index) => {
               return <IconButton title={service.title} icon={service.icon} key={index} />;

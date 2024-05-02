@@ -1,6 +1,7 @@
 import React from 'react';
+import { openWhatsApp } from '../utils/whatsapp'
 
-const IconCardButton = ({ button, text, image, color = 'purple' }) => {
+const IconCardButton = ({ button, text, image, color = 'purple', message }) => {
   return (
     <div className="col-12 col-md-6 col-lg-4 p-1">
       <div style={{ ...containerStyle, ...styles[color].card }} className="p-4">
@@ -9,6 +10,10 @@ const IconCardButton = ({ button, text, image, color = 'purple' }) => {
           type="button"
           className="btn rounded-pill"
           style={{ ...buttonStyle, ...styles[color].button }}
+          onClick={() => {
+            console.log("click", message)
+            if(message) openWhatsApp(message)()
+          }}
         >
           {button}
         </button>

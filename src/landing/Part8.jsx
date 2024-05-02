@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollItems from '../components/ScrollItems';
 import IconButton from '../components/IconButton';
 import {telefonoTicket, manoTelefonoPago, edificioTelefonoChat, manoTelefonoRenta, llaveMano, tabletTexto} from '../assets/icons'
+import { openWhatsApp } from '../utils/whatsapp';
 
 const services = [
   {
@@ -38,8 +39,8 @@ const Part8 = () => {
           <b>Nuestro Arrendador</b>
         </h3>
         <p>Arrienda directamente y nosotros lo administramos.</p>
-        <button className="btn bg-green rounded-pill mb-5">
-          Solicítalo Aquí
+        <button className="btn bg-green rounded-pill mb-5" onClick={openWhatsApp("Hola, estoy interesado, soy arrendador.")}>
+          Estoy interezado, soy arrendador
         </button>
         <ScrollItems id="part8">
           {services.map((service, index) => {
